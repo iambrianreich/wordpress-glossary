@@ -42,7 +42,7 @@ class PluginTest extends TestCase
      * Verifies post type registration is functioning.
      *
      * Verifies that plugin's init action handler that registers post types is
-     * registered.
+     * registered. Verifies that it registers the post type with the right name.
      *
      * @return void
      */
@@ -54,5 +54,7 @@ class PluginTest extends TestCase
             [$plugin, 'registerTermPostType'],
             'init handler to register terms post type is not registered'
         );
+
+        $this->assertPostTypeExists(Plugin::TERM_POST_TYPE);
     }
 }
