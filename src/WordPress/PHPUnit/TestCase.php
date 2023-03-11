@@ -19,4 +19,9 @@ class TestCase extends BaseTestCase
     {
         return $this->assertThat($handler, new HasActionHandlerRegisteredConstraint('init'), $message);
     }
+
+    public function assertPostTypeExists(string $postType, string $message = '')
+    {
+        return $this->assertThat($postType, new PostTypeExistsConstraint(), $message);
+    }
 }
