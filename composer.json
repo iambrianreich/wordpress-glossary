@@ -19,5 +19,8 @@
         "squizlabs/php_codesniffer": "*",
         "antecedent/patchwork": "^2.1",
         "yoast/phpunit-polyfills": "^1.0"
+    },
+    "require": {
+        "iambrianreich/wordpress-testcase": "^1.0"
     }
 }
