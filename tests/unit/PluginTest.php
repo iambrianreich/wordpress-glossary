@@ -13,7 +13,7 @@ namespace Tests\BR\WordPress\Glossary;
 
 use BR\WordPress\Glossary\Plugin;
 use BR\WordPress\PHPUnit\HasActionHandlerRegisteredConstraint;
-use BR\WordPress\PHPUnit\TestCase;
+use BR\WordPress\TestCase\PHPUnit\TestCase;
 
 use function Patchwork\redefine;
 
