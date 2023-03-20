@@ -1,0 +1,26 @@
+{
+    "name": "iambrianreich/wordpress-glossary",
+    "description": "WordPress plugin for managing a glossary of terms and definitions",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BR\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Brian Reich",
+            "email": "brian@brianreich.dev"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.6",
+        "squizlabs/php_codesniffer": "*",
+        "antecedent/patchwork": "^2.1",
+        "yoast/phpunit-polyfills": "^1.0"
+    },
+    "require": {
+        "iambrianreich/wordpress-testcase": "^1.0"
+    }
+}
